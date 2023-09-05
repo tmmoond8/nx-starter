@@ -1,6 +1,6 @@
 import styles from './index.module.css';
 import { Text } from '@bts.org/ui';
-import { Button } from '../components/core/button';
+import { Button, Badge } from '../components/core';
 
 export function Index() {
   /*
@@ -15,7 +15,10 @@ export function Index() {
           <div id="welcome">
             <h1 className="text-3xl font-bold underline">Hello world!</h1>
           </div>
-          <Button>Button</Button>
+          <div className="flex gap-4">
+            <Button>Button</Button>
+            <Badge>abc</Badge>
+          </div>
           <Text />
           <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
             <div className="shrink-0">
