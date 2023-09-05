@@ -1,4 +1,4 @@
-import { cn } from './utils';
+import { cn } from './shadcn';
 
 describe('utils', () => {
   it('cn test', () => {
