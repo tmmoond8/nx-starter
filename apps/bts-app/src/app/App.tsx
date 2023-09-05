@@ -1,3 +1,4 @@
+/// <reference types="nativewind/types" />
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, { useRef, useState } from 'react';
 import {
@@ -27,6 +28,12 @@ export const App = () => {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}
         >
+          <View className="flex-1 items-center justify-center bg-amber-900 ">
+            <Text className="white mx-5 divide-red-300">
+              이 문구를 작성했다고!!!
+            </Text>
+            <StatusBar />
+          </View>
           <View style={styles.section}>
             <Text style={styles.textLg}>Hello there,</Text>
             <Text style={[styles.textXL, styles.appTitleText]} testID="heading">
